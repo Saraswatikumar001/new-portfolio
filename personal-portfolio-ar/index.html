@@ -13,7 +13,68 @@
 
 <body class="bg-[#0f0c1d] text-white">
   <!-- Header placeholder -->
-  <div id="header"></div>
+  <header class="w-full bg-[#120c24]/90 backdrop-blur-lg shadow-sm fixed top-0 left-0 z-50">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+    <!-- Logo -->
+    <div class="flex items-center space-x-2">
+      <a href="./src/public/asset/logo.png" class="bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full p-2">
+        <i class="fa-solid fa-g text-white text-xl"></i>
+      </a>
+      <h1 class="text-xl font-semibold">Gerold</h1>
+    </div>
+
+    <!-- Menu -->
+    <nav class="hidden md:flex space-x-8 text-gray-400 font-medium">
+      <a href="#services" class="hover:text-white">About Us</a>
+      <a href="#works" class="hover:text-white">Services</a>
+      <a href="#resume" class="hover:text-white">Blog</a>
+      <a href="#skills" class="hover:text-white">Pages</a>
+      <a href="#testimonials" class="hover:text-white">Contact Us</a>
+    </nav>
+
+    <!-- Let’s Talk Button -->
+    <div class="hidden md:block">
+      <a
+        href="#contact"
+        class="bg-gradient-to-r from-purple-500 to-indigo-500 text-white px-6 py-2 rounded-full font-semibold flex items-center space-x-2 hover:from-indigo-500 hover:to-purple-500 transition-all duration-300"
+      >
+        <span>Let’s Talk</span>
+        <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+      </a>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button id="menu-btn" class="md:hidden text-gray-300 text-2xl focus:outline-none">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden bg-[#120c24] border-t border-gray-700 md:hidden">
+    <nav class="flex flex-col items-center space-y-4 py-4 text-gray-300 font-medium">
+      <a href="#services" class="hover:text-white">About Us</a>
+      <a href="#works" class="hover:text-white">Services</a>
+      <a href="#resume" class="hover:text-white">Blog</a>
+      <a href="#skills" class="hover:text-white">Pages</a>
+      <a href="#testimonials" class="hover:text-white">Contact Us</a>
+      <a href="#contact" class="bg-gradient-to-r from-purple-500 to-indigo-500 px-6 py-2 rounded-full font-semibold hover:from-indigo-500 hover:to-purple-500 transition-all">
+        Let’s Talk
+      </a>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  menuBtn?.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+    const icon = menuBtn.querySelector("i");
+    icon.classList.toggle("fa-bars");
+    icon.classList.toggle("fa-times");
+  });
+</script>
   <!-- Hero Section -->
   <main class="pt-[70px] text-center">
     <div class="bg-gradient-to-br from-[#0a021f] to-[#150031] text-white font-sans min-h-screen overflow-x-hidden">
