@@ -16,19 +16,7 @@
 
 <body class="bg-[#0f0c1d] text-white">
   <!-- Header placeholder -->
-  <div id="header"></div>
-
-  <script>
-    const menuBtn = document.getElementById("menu-btn");
-    const mobileMenu = document.getElementById("mobile-menu");
-
-    menuBtn?.addEventListener("click", () => {
-      mobileMenu.classList.toggle("hidden");
-      const icon = menuBtn.querySelector("i");
-      icon.classList.toggle("fa-bars");
-      icon.classList.toggle("fa-times");
-    });
-  </script>
+ <div id="header"></div>
   <!-- Hero Section -->
   <main class="pt-[70px] text-center">
     <div class="bg-gradient-to-br from-[#0a021f] to-[#150031] text-white font-sans min-h-screen overflow-x-hidden">
@@ -586,7 +574,6 @@
     </section>
     <div id="footer"></div>
 
-
     <!-- jQuery + Slick JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
@@ -647,6 +634,16 @@
             }
           });
         });
+      });
+
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn?.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+        const icon = menuBtn.querySelector("i");
+        icon.classList.toggle("fa-bars");
+        icon.classList.toggle("fa-times");
       });
 
 

@@ -1,4 +1,4 @@
-import './style.css'
+import './style.css';
 
 async function loadComponent(id, filePath) {
   const el = document.getElementById(id);
@@ -9,12 +9,14 @@ async function loadComponent(id, filePath) {
   }
 }
 
-// Load header and footer on every page
+// Correct path for Vite (use /src/... )
 loadComponent("header", "/src/components/header.html");
 loadComponent("footer", "/src/components/footer.html");
 
-// Optional: Footer Year
-const yearEl = document.getElementById("year");
-if (yearEl) {
-  yearEl.textContent = new Date().getFullYear();
-}
+// Footer Year
+document.addEventListener("DOMContentLoaded", () => {
+  const yearEl = document.getElementById("year");
+  if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
+  }
+});
