@@ -60,11 +60,11 @@
       </nav>
     </div>
   </header>
-  
+
   <!-- Hero Section -->
   <main class="pt-[70px] text-center">
     <div class="bg-gradient-to-br from-[#0a021f] to-[#150031] text-white font-sans min-h-screen overflow-x-hidden">
-      <div class="flex flex-row items-center justify-between px-40 lg:px-20 py-10 relative">
+      <div class="flex flex-row items-center justify-between px-40 lg:px-40 py-20 relative">
         <!-- Left Side -->
         <div class="lg:w-1/2 space-y-6 text-left">
           <p class="text-gray-300">
@@ -512,49 +512,59 @@
       </div>
     </section>
     <!-- Form Section -->
-    <section class="w-full min-h-screen bg-[#0f0b18] flex items-center justify-center px-6">
+    <section class="w-full min-h-screen bg-[#0f0b18] flex items-center justify-center px-6 py-16">
       <div
-        class="w-full max-w-7xl mx-auto bg-[#06070B] rounded-xl p-20 flex flex-col md:flex-row items-center justify-center gap-16">
+        class="w-full max-w-7xl mx-auto bg-[#06070B] rounded-2xl p-10 md:p-20 flex flex-col md:flex-row items-start justify-between gap-20">
+
         <!-- LEFT CONTENT -->
-        <div class="text-white max-w-md">
-          <p class="text-[10px] tracking-widest text-purple-400 mb-2">BEHIND THE PIXELS</p>
-          <h2 class="text-3xl font-bold leading-snug mb-4">
+        <div class="text-white max-w-md space-y-5">
+          <p class="text-[11px] tracking-widest text-purple-400">BEHIND THE PIXELS</p>
+
+          <h2 class="text-4xl md:text-5xl font-extrabold leading-tight">
             READY FOR YOUR <br />
             SUCCESS? REACH <br />
             OUT TO START.
           </h2>
-          <p class="text-[12px] text-gray-400 mb-6 leading-relaxed">
+
+          <p class="text-[13px] text-gray-400 leading-relaxed">
             Break down complex experiences to problems, <br />
             create stronger focused solutions.
           </p>
-          <button class="bg-purple-600 hover:bg-purple-700 text-white text-sm px-5 py-2 rounded-full">
+
+          <button
+            class="bg-purple-600 hover:bg-purple-700 text-white text-sm px-6 py-3 rounded-full transition-all duration-300">
             Learn More →
           </button>
         </div>
 
         <!-- RIGHT FORM -->
-        <form class="w-full max-w-sm bg-gradient-to-b from-purple-500 to-pink-600 p-6 rounded-lg text-white space-y-4">
+        <form
+          class="w-full max-w-sm bg-gradient-to-b from-purple-500 to-pink-600 p-8 rounded-2xl text-white space-y-5 shadow-xl shadow-purple-500/20">
 
-          <div class="flex gap-3">
-            <input type="text" placeholder="Enter First Name"
-              class="w-1/2 px-3 py-2 text-sm rounded bg-white/20 placeholder-white/70 focus:outline-none">
-            <input type="text" placeholder="Enter Last Name"
-              class="w-1/2 px-3 py-2 text-sm rounded bg-white/20 placeholder-white/70 focus:outline-none">
+          <div class="flex flex-col gap-5">
+            <div class="flex gap-4">
+              <input type="text" placeholder="Enter First Name"
+                class="w-1/2 px-4 py-3 text-sm rounded-lg bg-white/20 placeholder-white/70 focus:outline-none">
+              <input type="text" placeholder="Enter Last Name"
+                class="w-1/2 px-4 py-3 text-sm rounded-lg bg-white/20 placeholder-white/70 focus:outline-none">
+            </div>
+
+            <div class="flex gap-4">
+              <input type="email" placeholder="Enter Email"
+                class="w-1/2 px-4 py-3 text-sm rounded-lg bg-white/20 placeholder-white/70 focus:outline-none">
+              <input type="text" placeholder="Enter Phone"
+                class="w-1/2 px-4 py-3 text-sm rounded-lg bg-white/20 placeholder-white/70 focus:outline-none">
+            </div>
+
+            <textarea placeholder="Message"
+              class="w-full h-28 px-4 py-3 text-sm rounded-lg bg-white/20 placeholder-white/70 focus:outline-none"></textarea>
+
+            <button
+              class="w-full bg-black/40 hover:bg-black/60 text-white text-sm py-3 rounded-lg transition-all duration-300">
+              Send Message →
+            </button>
           </div>
 
-          <div class="flex gap-3">
-            <input type="email" placeholder="Enter Email"
-              class="w-1/2 px-3 py-2 text-sm rounded bg-white/20 placeholder-white/70 focus:outline-none">
-            <input type="text" placeholder="Enter Phone"
-              class="w-1/2 px-3 py-2 text-sm rounded bg-white/20 placeholder-white/70 focus:outline-none">
-          </div>
-
-          <textarea placeholder="Message"
-            class="w-full h-24 px-3 py-2 text-sm rounded bg-white/20 placeholder-white/70 focus:outline-none"></textarea>
-
-          <button class="w-full bg-black/40 hover:bg-black/60 text-white text-sm py-2 rounded transition">
-            Send Message →
-          </button>
         </form>
 
       </div>
@@ -616,82 +626,152 @@
         </div>
       </div>
     </section>
-    <div id="footer"></div>
+  </main>
+  <!--Footer Section-->
+  <section class="bg-[#060606] text-white py-16 px-6 rounded-3xl max-w-7xl mx-auto mt-10">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+      <!-- LOGO + ABOUT -->
+      <div>
+        <div class="flex items-center space-x-2">
+          <img src="/asset/logo.png" alt="Logo" class="w-10 h-10 rounded-full object-cover" />
 
-    <!-- jQuery + Slick JS -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
-    </script>
-    <script src="https://gerold.themejunction.net/wp-content/uploads/2024/05/portfolio-3-1024x877.jpg"
-      crossorigin="anonymous"></script>
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/a2e0e6ad4f.js" crossorigin="anonymous"></script>
-    <!-- Optional JS for subtle floating animation -->
-    <script>
-      $(document).ready(function () {
-        $('.feedback-slider').slick({
-          dots: true,
-          infinite: true,
-          slidesToShow: 1,
-          arrows: true,
-          prevArrow:
-            '<button class="slick-prev absolute left-[-50px] top-1/2 transform -translate-y-1/2 bg-[#1a1526] text-white w-10 h-10 rounded-full flex items-center justify-center shadow"><i class="fa-solid fa-arrow-left"></i></button>',
-          nextArrow:
-            '<button class="slick-next absolute right-[-50px] top-1/2 transform -translate-y-1/2 bg-[#1a1526] text-white w-10 h-10 rounded-full flex items-center justify-center shadow"><i class="fa-solid fa-arrow-right"></i></button>',
+          <h2 class="text-xl font-semibold">portfolio</h2>
+        </div>
+        <p class="text-gray-400 mt-4 leading-relaxed text-sm">
+          I break down complex user the experience problems the create integrity
+          focused to <br> solutions that's connect.
+        </p>
+        <!-- Social Icons -->
+        <div class="flex space-x-4 mt-5">
+          <i class="fab fa-facebook-f text-gray-400 hover:text-white text-lg"></i>
+          <i class="fab fa-instagram text-gray-400 hover:text-white text-lg"></i>
+          <i class="fab fa-x-twitter text-gray-400 hover:text-white text-lg"></i>
+          <i class="fab fa-linkedin-in text-gray-400 hover:text-white text-lg"></i>
+        </div>
+      </div>
+
+      <!-- LEGAL DETAILS -->
+      <div>
+        <h3 class="text-lg font-semibold tracking-wider mb-4">LEGAL DETAILS</h3>
+        <ul class="space-y-2 text-gray-400 text-sm">
+          <li><a href="#services" class="hover:text-white">Policy Privacy</a></li>
+          <li><a href="#works" class="hover:text-white">Term & Conditions</a></li>
+          <li><a href="#resume" class="hover:text-white">Refund and Cancellation</a></li>
+          <li><a href="#skills" class="hover:text-white">Pages</a></li>
+          <li><a href="#testimonials" class="hover:text-white">Disclaimer</a></li>
+        </ul>
+      </div>
+
+      <!-- CONTACT -->
+      <div>
+        <h3 class="text-lg font-semibold tracking-wider mb-4 uppercase">Our Services</h3>
+        <ul class="space-y-2 text-gray-400 text-sm">
+          <li><a href="#services" class="hover:text-white">About Us</a></li>
+          <li><a href="#works" class="hover:text-white">Consultation And Strategy</a></li>
+          <li><a href="#resume" class="hover:text-white">Mobile App Design</a></li>
+          <li><a href="#skills" class="hover:text-white">Branding And Visual Identity</a></li>
+          <li><a href="#testimonials" class="hover:text-white">UI/UX Design System Creation</a></li>
+        </ul>
+      </div>
+
+      <!-- NEWSLETTER -->
+      <div>
+        <h3 class="text-sm font-semibold tracking-wider mb-4">SUBSCRIBE TO MY NEWSLETTER!</h3>
+        <div class="flex items-center bg-white rounded-full p-1 pl-4">
+          <input type="text" placeholder="Enter First Name"
+            class="flex-1 text-black text-sm bg-transparent outline-none">
+          <button class="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center text-white">
+            ↗
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Divider Line -->
+    <div class="border-t border-white/10 my-10"></div>
+    <!-- Bottom Bar -->
+    <div class="flex items-center justify-center text-sm text-gray-400">
+      <div class="mt-4 md:mt-0">
+        ©2025 ALL RIGHTS RESERVED
+      </div>
+    </div>
+  </section>
+
+  <!-- jQuery + Slick JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
+  </script>
+  <script src="https://gerold.themejunction.net/wp-content/uploads/2024/05/portfolio-3-1024x877.jpg"
+    crossorigin="anonymous"></script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a2e0e6ad4f.js" crossorigin="anonymous"></script>
+  <!-- Optional JS for subtle floating animation -->
+  <script>
+    $(document).ready(function () {
+      $('.feedback-slider').slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        arrows: true,
+        prevArrow:
+          '<button class="slick-prev absolute left-[-50px] top-1/2 transform -translate-y-1/2 bg-[#1a1526] text-white w-10 h-10 rounded-full flex items-center justify-center shadow"><i class="fa-solid fa-arrow-left"></i></button>',
+        nextArrow:
+          '<button class="slick-next absolute right-[-50px] top-1/2 transform -translate-y-1/2 bg-[#1a1526] text-white w-10 h-10 rounded-full flex items-center justify-center shadow"><i class="fa-solid fa-arrow-right"></i></button>',
+      });
+    });
+    // Simple button interaction (optional)
+    document.getElementById("knowMoreBtn").addEventListener("click", () => {
+      alert("Thanks for your interest! More content coming soon.");
+    });
+
+    document.querySelectorAll('.absolute').forEach(el => {
+      el.animate([
+        { transform: 'translateY(0px)' },
+        { transform: 'translateY(-10px)' },
+        { transform: 'translateY(0px)' }
+      ], {
+        duration: 4000,
+        iterations: Infinity
+      });
+    });
+
+    const btns = document.querySelectorAll(".filter-btn");
+    const cards = document.querySelectorAll(".card");
+
+    btns.forEach(btn => {
+      btn.addEventListener("click", () => {
+
+        // toggle active button
+        btns.forEach(b => b.classList.remove("active-btn"));
+        btn.classList.add("active-btn");
+
+        const filter = btn.dataset.filter;
+
+        cards.forEach(card => {
+          const category = card.dataset.category;
+
+          if (filter === "all" || category === filter) {
+            card.classList.remove("hidden-card");
+          } else {
+            card.classList.add("hidden-card");
+          }
         });
       });
-      // Simple button interaction (optional)
-      document.getElementById("knowMoreBtn").addEventListener("click", () => {
-        alert("Thanks for your interest! More content coming soon.");
-      });
+    });
 
-      document.querySelectorAll('.absolute').forEach(el => {
-        el.animate([
-          { transform: 'translateY(0px)' },
-          { transform: 'translateY(-10px)' },
-          { transform: 'translateY(0px)' }
-        ], {
-          duration: 4000,
-          iterations: Infinity
-        });
-      });
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
 
-      const btns = document.querySelectorAll(".filter-btn");
-      const cards = document.querySelectorAll(".card");
-
-      btns.forEach(btn => {
-        btn.addEventListener("click", () => {
-
-          // toggle active button
-          btns.forEach(b => b.classList.remove("active-btn"));
-          btn.classList.add("active-btn");
-
-          const filter = btn.dataset.filter;
-
-          cards.forEach(card => {
-            const category = card.dataset.category;
-
-            if (filter === "all" || category === filter) {
-              card.classList.remove("hidden-card");
-            } else {
-              card.classList.add("hidden-card");
-            }
-          });
-        });
-      });
-
-      const menuBtn = document.getElementById("menu-btn");
-      const mobileMenu = document.getElementById("mobile-menu");
-
-      menuBtn?.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
-        const icon = menuBtn.querySelector("i");
-        icon.classList.toggle("fa-bars");
-        icon.classList.toggle("fa-times");
-      });
+    menuBtn?.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+      const icon = menuBtn.querySelector("i");
+      icon.classList.toggle("fa-bars");
+      icon.classList.toggle("fa-times");
+    });
 
 
-    </script>
+  </script>
 </body>
 
 </html>
