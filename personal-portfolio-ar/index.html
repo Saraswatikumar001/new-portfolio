@@ -5,13 +5,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio</title>
+  <link rel="shortcut icon" href="./public/asset/logo.png" type="image/x-icon">
   <script type="module" src="/src/main.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Slick CSS -->
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" type="text/css"
     href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
 <body class="bg-[#0f0c1d] text-white">
@@ -19,14 +21,14 @@
   <header class="w-full bg-[#120c24]/90 backdrop-blur-lg shadow-sm fixed top-0 left-0 z-50">
     <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
       <div class="flex items-center space-x-3">
-        <img src="/asset/logo.png" alt="Logo" class="w-20 h-20 rounded-full object-cover" />
+        <img src="./public/asset/logo.png" alt="Logo" class="w-20 h-20 rounded-full object-cover" />
 
         <h1 class="text-xl font-semibold">Portfolio</h1>
       </div>
       <!-- Menu -->
       <nav class="hidden md:flex space-x-8 text-gray-400 font-medium">
-        <a href="#services" class="hover:text-white">About Us</a>
-        <a href="#works" class="hover:text-white">Services</a>
+        <a href="./pages/about.html" class="hover:text-white">About Us</a>
+        <a href="./pages/services.html" class="hover:text-white">Services</a>
         <a href="#resume" class="hover:text-white">Blog</a>
         <a href="#skills" class="hover:text-white">Pages</a>
         <a href="#testimonials" class="hover:text-white">Contact Us</a>
@@ -633,9 +635,9 @@
       <!-- LOGO + ABOUT -->
       <div>
         <div class="flex items-center space-x-2">
-          <img src="/asset/logo.png" alt="Logo" class="w-10 h-10 rounded-full object-cover" />
+          <img src="./public/asset/logo.png" alt="Logo" class="w-10 h-10 rounded-full object-cover" />
 
-          <h2 class="text-xl font-semibold">portfolio</h2>
+          <h2 class="text-xl font-semibold">Portfolio</h2>
         </div>
         <p class="text-gray-400 mt-4 leading-relaxed text-sm">
           I break down complex user the experience problems the create integrity
