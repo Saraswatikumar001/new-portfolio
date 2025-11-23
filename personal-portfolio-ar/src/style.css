@@ -117,7 +117,30 @@
   color: white;
 }
 
-*{
+* {
   font-family: "Figtree", sans-serif;
   font-optical-sizing: auto;
+}
+
+@media (max-width: 640px) {
+
+  .gradient-background {
+    background: linear-gradient(300deg, darkviolet, #110129, #ffffff);
+    background-size: 180% 180%;
+    animation: gradient-animation 6s ease infinite;
+  }
+
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 }
